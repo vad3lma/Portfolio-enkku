@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kieliprofiiliportfolio – Valtteri Vartiala</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: #f0f0f0;
+      background: #111;
+      scroll-behavior: smooth;
+    }
+
+    /* Ylänavigointi */
+    nav#topnav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: rgba(0,0,0,0.7);
+      padding: 10px 20px;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      z-index: 10;
+    }
+    nav#topnav a {
+      color: #22d3ee;
+      text-decoration: none;
+      padding: 8px 15px;
+      border-radius: 6px;
+      font-size: 1.1em;
+      transition: background 0.3s;
+    }
+    nav#topnav a:hover {
+      background: rgba(34,211,238,0.8);
+      color: #000;
+    }
+
+    /* Sivut */
+    .page {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background-size: cover;
+      background-position: center;
+      padding: 120px 20px 20px 20px;
+      position: relative;
+      color: #f0f0f0;
+    }
+
+    .page::before {
+      content: "";
+      position: absolute;
+      top:0;
+      left:0;
+      width:100%;
+      height:100%;
+      background: rgba(0,0,0,0.5); /* himmennys */
+      z-index:0;
+    }
+
+    .page > * {
+      position: relative;
+      z-index:1;
+    }
+
+    /* Tekstit ja otsikot */
+    .page h1 { font-size: 4em; text-shadow:2px 2px 10px rgba(0,0,0,0.7); margin-bottom: 20px; }
+    .page h2 { font-size: 3em; text-shadow:2px 2px 8px rgba(0,0,0,0.7); margin-bottom: 15px; }
+    .page h3 { font-size: 2em; text-shadow:2px 2px 6px rgba(0,0,0,0.7); margin-top: 20px; margin-bottom: 10px; }
+    .page p, .page ul {
+      font-size: 1.3em;
+      background: rgba(0,0,0,0.5);
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 800px;
+    }
+
+    .page-number {
+      text-align: right;
+      font-size: 1em;
+      color: #bbb;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Ylänavigointi -->
+  <nav id="topnav">
+    <a href="#home">Home</a>
+    <a href="#skills">Language Skills</a>
+    <a href="#studying">Studying Skills</a>
+    <a href="#certs">Certificates</a>
+  </nav>
+
+  <!-- Home / Alkusivu -->
+  <section id="home" class="page" style="background-image: url('https://sdmntprnortheu.oaiusercontent.com/files/00000000-85b8-61f4-a797-c1c4e2961337/raw?se=2025-08-19T14%3A31%3A50Z&sp=r&sv=2024-08-04&sr=b&scid=8c8452e5-b953-5bff-9870-2f11f4e08944&skoid=f05d6a75-3c59-41ae-be2c-51a75f29841e&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-08-19T04%3A44%3A21Z&ske=2025-08-20T04%3A44%3A21Z&sks=b&skv=2024-08-04&sig=ENpqFUw9BH1AxdHR6qgnPP1BRIaKV5qG/wlcJzJx16A%3D');">
+    <h1>Language Profile Portfolio</h1>
+    <p><strong>Name:</strong> Valtteri Vartiala | <strong>School:</strong> Ylöjärven lukio | <strong>Date:</strong> 19.8.2025</p>
+  </section>
+
+  <!-- Page 1: Language Skills -->
+  <section id="skills" class="page" style="background-image: url('https://sdmntpraustraliaeast.oaiusercontent.com/files/00000000-9260-61fa-93e6-2ddf85642edc/raw?se=2025-08-19T14%3A40%3A09Z&sp=r&sv=2024-08-04&sr=b&scid=d0899c0f-e2d8-560e-ac5e-f693f8ac1cee&skoid=f05d6a75-3c59-41ae-be2c-51a75f29841e&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-08-19T03%3A17%3A44Z&ske=2025-08-20T03%3A17%3A44Z&sks=b&skv=2024-08-04&sig=gqHHAFdDfAeNSHfxJpcnCBXqBi8T/7n/M3Grb3c50SE%3D');">
+    <h2>1. An Assessment of My Language Skills and Goals</h2>
+    <h3>1.1 Mother tongue</h3>
+    <p>Kirjoittaminen ja ymmärtäminen onnistuu hyvin, mutta esiintyminen saa mut välillä kuulostamaan enemmän stand up -koomikolta kuin luokan puhujalta.</p>
+    <h3>1.2 English</h3>
+    <p>Englannin taitoni on hyvä. Ymmärrän suurimman osan teksteistä ja puheesta, ja pystyn kommunikoimaan sujuvasti. En kuitenkaan aina kirjoita asioita oikeassa järjestyksessä, mutta puhuminen onnistuu.</p>
+    <h3>1.3 Other languages</h3>
+    <p>Ruotsi on toinen kieleni, sain siitä seiskan. En silti oikein osaa puhua tai ymmärtää ruotsia, vaikka pitäisi, koska minulla on ruotsalaisia sukulaisia. Lisäksi aloitin juuri espanjan tänä vuonna. Se on ihan hauskaa, mutta etenee todella nopeasti, välillä tuntuu että aivot juoksee opettajaa karkuun.</p>
+    <div class="page-number">Sivu 1</div>
+  </section>
+
+  <!-- Page 2: Studying Skills -->
+  <section id="studying" class="page" style="background-image: url('https://cdn.corporatefinanceinstitute.com/assets/10-Poor-Study-Habits-Opener.jpeg');">
+    <h2>2. An Assessment of My Studying Skills and Goals</h2>
+    <p>Pysyn aina aikatauluissa ja mulla on tarvittavat välineet mukana. Yritän keskittyä sopivasti, mutta se ei aina onnistu kun aivot harhailee välillä jonnekin ihan muualle. Kyllä siitä silti yleensä hyvä lopputulos syntyy.</p>
+    <div class="page-number">Sivu 2</div>
+  </section>
+
+  <!-- Page 3: Certificates -->
+  <section id="certs" class="page" style="background-image: url('https://cdn.sanity.io/images/24oxpx4s/prod/4fa972cf84c2c7f354383298c5819c5a2ba7d150-2912x1632.jpg?auto=format&fit=crop&q=70&w=2048');">
+    <h2>3. Certificates</h2>
+    <ul>
+      <li>Englanti: vahva 8</li>
+      <li>Äidinkieli: vahva 8</li>
+      <li>Ruotsi: 7</li>
+    </ul>
+    <div class="page-number">Sivu 3</div>
+  </section>
+
+</body>
+</html>
+
